@@ -23,6 +23,9 @@ public class LessonContainer : MonoBehaviour
     //esta es nuestra imagen principal que contiene las UI de los textos y el boton
     public GameObject lessonContainer;
 
+    [Header("Lesson Data")]
+    public ScriptableObject lessonData;
+
 
     // Start is called before the first frame update
     void Start()
