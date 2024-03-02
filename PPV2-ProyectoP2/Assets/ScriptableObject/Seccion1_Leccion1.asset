@@ -13,49 +13,50 @@ MonoBehaviour:
   m_Name: Seccion1_Leccion1
   m_EditorClassIdentifier: 
   Lesson: 0
-  LeccionList:
+  leccionList:
   - ID: 0
-    lessons: "Es un contenedor de informaci\xF3n:"
+    lessons: "\xBFCu\xE1l de las siguientes opciones describe mejor Unity?"
     options:
-    - Clase
-    - Funcion
-    - Variable
-    - GameObject
-    - Prefab
-    correctAnswer: 2
+    - Motor de juego
+    - "Editor de im\xE1genes"
+    - Navegador web
+    - Procesador de texto
+    - "Hoja de c\xE1lculo"
+    correctAnswer: 0
   - ID: 1
-    lessons: 'Es una porcion de codigo que realiza una accion:'
+    lessons: "\xBFQu\xE9 lenguaje de programaci\xF3n se utiliza com\xFAnmente en
+      Unity?"
     options:
-    - Clase
-    - Funcion
-    - GameObject
-    - Prefab
-    - Algoritmo
-    correctAnswer: 1
+    - Java
+    - C++
+    - C#
+    - Python
+    - Ruby
+    correctAnswer: 2
   - ID: 2
-    lessons: Es una serie de pasos para resolver un problema
+    lessons: "\xBFQu\xE9 es un GameObject en Unity?"
     options:
-    - Programa
-    - Funcion
-    - GameObject
-    - Aplicacion
-    - Algoritmo
+    - Un objeto 3D
+    - Una imagen
+    - Un sonido
+    - Una clase abstracta
+    - Una instancia de MonoBehaviour
     correctAnswer: 4
   - ID: 3
-    lessons: 'Es una serie de algoritmos:'
+    lessons: "\xBFCu\xE1l es el prop\xF3sito del componente Rigidbody en Unity?"
     options:
-    - Programa
-    - Funcion
-    - GameObject
-    - Aplicacion
-    - Algoritmo
-    correctAnswer: 0
+    - "Controlar la iluminaci\xF3n "
+    - "Manejar la f\xEDsica del objeto"
+    - Reproducir sonidos
+    - Gestionar la interfaz de usuario
+    - "Renderizar gr\xE1ficos"
+    correctAnswer: 1
   - ID: 4
-    lessons: Que es un GameObject?
+    lessons: "\xBFQu\xE9 es Unity Asset Store?"
     options:
-    - Programa
-    - Funcion
-    - Object
-    - Aplicacion
-    - Algoritmo
-    correctAnswer: 2
+    - Una tienda de ropa
+    - Un supermercado
+    - Una plataforma de redes sociales
+    - "Una tienda en l\xEDnea para assets y recursos de Unity"
+    - "Un servicio de transmisi\xF3n de m\xFAsica"
+    correctAnswer: 3
