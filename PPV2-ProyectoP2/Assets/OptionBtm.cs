@@ -15,4 +15,14 @@ public class OptionBtm : MonoBehaviour
         transform.GetChild(0).GetComponent<TMP_Text>().text = OptionName;
     }
 
+    public void UpdateText()
+    {
+        transform.GetChild(0).GetComponent<TMP_Text>().text = OptionName;
+    }
+
+    public void SelectionOption()
+    {
+        LevelManager.Instance.SetPlayerAnswer(OptionID);
+        LevelManager.Instance.CheckPlayerState();
+    }
 }
