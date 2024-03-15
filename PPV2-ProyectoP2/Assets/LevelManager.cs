@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/// <summary>
+/// En nuestra escena lesson, esta clase nos va a ayudar a cambiar las preguntas, las opciones de los botones
+/// Tambien nos inicará si esta es correcta o incorrecta a la hora de seleccionarla y enviar la respuesta
+/// </summary>
 public class LevelManager : MonoBehaviour
 {
     //Instancia de la clase
@@ -32,6 +36,9 @@ public class LevelManager : MonoBehaviour
     public Leccion currentLesson;
 
     //(.5 pts perdidos XD) Patron Singleton: Es un patrón de diseño, encargado, de crear una instancia de la clase para ser referenciada en otra clase sin la necesidad de declarar una variables.
+    /// <summary>
+    ///Verificará que solo haya una instancia de LevelManager
+    /// </summary>
     private void Awake()
     {
         if(Instance != null)
@@ -44,7 +51,11 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
+    /// <summary>
+    ///  Esta cargará la primera pregunta de nuestra leccion y registra la respuesta,
+    ///  para despues habilitar el botón para enviar la respuesta
+    ///  Todo es a nivel UI/comienza desde que empezamos a jugar
+    /// </summary>
     void Start()
     {
         //Establecemos la cantidad de preguntas en la leccion
@@ -55,6 +66,11 @@ public class LevelManager : MonoBehaviour
         CheckPlayerState();
     }
 
+    /// <summary>
+    /// Está encargado de buscar las preguntas, aquí esta la logica sobre lo que aparecera para la leccion, la pregunta y sus respuestas correspondientes
+    /// llamará la informacion para verificar la respuesta correcta y las opciones guardadas
+    /// una vez que se acaben las preguntas guardadas o asignadas, en consola aparecera un mensaje indicandolo
+    /// </summary>
     private void LoadQuestion()
     {
         //Aseguramos que la pregunta actual esta dentro de los limites
@@ -85,6 +101,11 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Este metodo nos ayuda a verificar la respuesta, si estuv bien aparecerá una ventana emergente verde, 
+    /// si la respuesta fue incorrecta el color será rojo
+    /// y procederá a mostrarnos la siguiente pregunta
+    /// </summary>
     public void NextCuestion()
     {
         if(CheckPlayerState())
@@ -127,6 +148,12 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Aqui nos mostrara la respuesta correcta a la pregunta despues de haber sido respondida, esperará 2.5 segundos
+    /// se ocultará y llamará a la siguiente pregunta
+    /// </summary>
+    /// <param name="isCorrect"></param>
+    /// <returns></returns>
     private IEnumerator ShowResultAndLoadQuestion(bool isCorrect)
     {
         yield return new WaitForSeconds(2.5f); //Ajusta el tiempo que deseas mostrar el resultado
@@ -144,11 +171,20 @@ public class LevelManager : MonoBehaviour
         CheckPlayerState();
     }
 
+    /// <summary>
+    /// Aquí nos guarda la respuesta del jugador, la que eligió
+    /// </summary>
+    /// <param name="_answer"></param>
     public void SetPlayerAnswer(int _answer)
     {
         answerFromPlayer = _answer;
     }
 
+    /// <summary>
+    /// Este detecta si ya fue seleccionada una respuesta, para despues habilitar el boton de comprobar
+    /// mientras no nos deja enviar nada
+    /// </summary>
+    /// <returns></returns>
     public bool CheckPlayerState()
     {
         if(answerFromPlayer != 9)

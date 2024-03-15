@@ -1381,6 +1381,7 @@ MonoBehaviour:
   stageTitle: {fileID: 1725018909}
   lessonStage: {fileID: 34253752}
   lessonContainer: {fileID: 1332880539}
+  lessonData: {fileID: 0}
 --- !u!1 &994875762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9211452074768972972, guid: 58d12d93389cc724ab3346ba4b5042d8, type: 3}
@@ -1405,6 +1406,7 @@ MonoBehaviour:
   stageTitle: {fileID: 1725018909}
   lessonStage: {fileID: 34253752}
   lessonContainer: {fileID: 1332880539}
+  lessonData: {fileID: 0}
 --- !u!1 &1090300321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1710,6 +1712,7 @@ MonoBehaviour:
   stageTitle: {fileID: 1725018909}
   lessonStage: {fileID: 34253752}
   lessonContainer: {fileID: 1332880539}
+  lessonData: {fileID: 0}
 --- !u!1001 &1147547687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2905,6 +2908,7 @@ MonoBehaviour:
   stageTitle: {fileID: 1725018909}
   lessonStage: {fileID: 34253752}
   lessonContainer: {fileID: 1332880539}
+  lessonData: {fileID: 0}
 --- !u!1 &2120813764
 GameObject:
   m_ObjectHideFlags: 0
@@ -3183,6 +3187,7 @@ MonoBehaviour:
   stageTitle: {fileID: 1725018909}
   lessonStage: {fileID: 34253752}
   lessonContainer: {fileID: 1332880539}
+  lessonData: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
