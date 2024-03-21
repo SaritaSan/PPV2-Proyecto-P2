@@ -4,7 +4,9 @@ using System.IO;
 using UnityEngine;
 
 /// <summary>
-/// 
+/// SaveSystem: ahorita verifica con la instancia si no existe otro de su mismo tipo, CreateFile: es capaz de crear documentos especificando su nombre y extension,
+/// ReadFile: nos ayuda a reflejar en consola la informacion de algun archivo que hayamos creado, busca el archivo en RESOURCES
+/// JSON: nos va a ayudar a crear un grupo que podamos guardar, para su uso a futuro
 /// </summary>
 public class SaveSystem : MonoBehaviour
 {
@@ -13,7 +15,7 @@ public class SaveSystem : MonoBehaviour
 
     /// <summary>
     /// Patrón Singleton:
-    /// Verificará que solo haya una instancia de LevelManager
+    /// Verificará que solo haya una instancia de SaveSystem
     /// </summary>
     private void Awake()
     {
