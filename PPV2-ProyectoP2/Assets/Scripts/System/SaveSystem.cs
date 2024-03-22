@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
+using System.IO;
 
 /// <summary>
 /// SaveSystem: ahorita verifica con la instancia si no existe otro de su mismo tipo, CreateFile: es capaz de crear documentos especificando su nombre y extension,
@@ -12,6 +12,9 @@ public class SaveSystem : MonoBehaviour
 {
     //Creamos una instancia (la instancia es para referirce a un objeto ya existente, para así no tener que crear un nuevo objeto para todo)
     public static SaveSystem Instance;
+
+    public Leccion data;
+    public SubjectContainer subject;
 
     /// <summary>
     /// Patrón Singleton:
@@ -30,8 +33,12 @@ public class SaveSystem : MonoBehaviour
     }
     void Start()
     {
+        SaveToJSON("LeccionDummy", data);
+
         //CreateFile("Luis", ".data");
         Debug.Log(ReadFile("Luis", ".data"));
+
+        subject = LoadFromJSON<SubjectContainer>("SegundoCompendio");
     }
 
     public void CreateFile(string _name, string _extension)
@@ -101,5 +108,26 @@ public class SaveSystem : MonoBehaviour
         {
             Debug.LogWarning("ERRROR - FileSystem: _data is null, check for param [object _data]");
         }
+    }
+
+    public T LoadFromJSON<T>(string _fileName) where T : new()
+    {
+        T Dato = new T();
+        string path = Application.dataPath + "/Resources/JSONS/" + _fileName + ".json";
+        string JSONData = "";
+        if(File.Exists(path))
+        {
+            JSONData = File.ReadAllText(path);
+            Debug.Log("JSON STRING: " + JSONData);
+        }
+        if(JSONData.Length != 0)
+        {
+            JsonUtility.FromJsonOverwrite(JSONData, Dato);
+        }
+        else
+        {
+            Debug.LogWarning("ERROR - FileSystem: JSONData is empty, check for local variable [string] JSONData");
+        }
+        return Dato;
     }
 }
