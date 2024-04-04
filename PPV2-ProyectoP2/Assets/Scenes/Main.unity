@@ -666,6 +666,7 @@ GameObject:
   - component: {fileID: 632867064}
   - component: {fileID: 632867063}
   - component: {fileID: 632867062}
+  - component: {fileID: 632867066}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -757,6 +758,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &632867066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632867061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad6de8892f87234b8ae7b4116e6f306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectedLesson: dummy
 --- !u!1 &640155219 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9211452074768972972, guid: 58d12d93389cc724ab3346ba4b5042d8, type: 3}
@@ -1382,6 +1396,7 @@ MonoBehaviour:
   lessonStage: {fileID: 34253752}
   lessonContainer: {fileID: 1332880539}
   lessonData: {fileID: 0}
+  LessonName: Leccion5
 --- !u!1 &994875762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9211452074768972972, guid: 58d12d93389cc724ab3346ba4b5042d8, type: 3}
@@ -1407,6 +1422,7 @@ MonoBehaviour:
   lessonStage: {fileID: 34253752}
   lessonContainer: {fileID: 1332880539}
   lessonData: {fileID: 0}
+  LessonName: Leccion4
 --- !u!1 &1090300321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1713,6 +1729,7 @@ MonoBehaviour:
   lessonStage: {fileID: 34253752}
   lessonContainer: {fileID: 1332880539}
   lessonData: {fileID: 0}
+  LessonName: Leccion3
 --- !u!1001 &1147547687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1787,7 +1804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7643514862041863604, guid: 58d12d93389cc724ab3346ba4b5042d8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -475
+      value: -474.99997
       objectReference: {fileID: 0}
     - target: {fileID: 7643514862041863604, guid: 58d12d93389cc724ab3346ba4b5042d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2809,63 +2826,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799483355}
   m_CullTransparentMesh: 1
---- !u!1 &1976473482
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1976473484}
-  - component: {fileID: 1976473483}
-  m_Layer: 0
-  m_Name: SaveSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1976473483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976473482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4921c1346319848498f1067bd9c57d5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data:
-    ID: 0
-    lessons: Este caso permite acceder a solo atributos heredados
-    options:
-    - void
-    - start
-    - private
-    - protected
-    - public
-    correctAnswer: 3
-  subject:
-    Lesson: 0
-    LeccionList: []
---- !u!4 &1976473484
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976473482}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0985053, y: 0.09471293, z: 1082.4147}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2033967709
 GameObject:
   m_ObjectHideFlags: 0
@@ -2966,6 +2926,7 @@ MonoBehaviour:
   lessonStage: {fileID: 34253752}
   lessonContainer: {fileID: 1332880539}
   lessonData: {fileID: 0}
+  LessonName: Leccion2
 --- !u!1 &2120813764
 GameObject:
   m_ObjectHideFlags: 0
@@ -3048,7 +3009,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2120813767}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 632867066}
+        m_TargetAssemblyTypeName: MainScript, Assembly-CSharp
+        m_MethodName: BeginGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2120813767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3245,6 +3218,7 @@ MonoBehaviour:
   lessonStage: {fileID: 34253752}
   lessonContainer: {fileID: 1332880539}
   lessonData: {fileID: 0}
+  LessonName: Leccion1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3252,4 +3226,3 @@ SceneRoots:
   - {fileID: 1753893511}
   - {fileID: 632867065}
   - {fileID: 599132092}
-  - {fileID: 1976473484}

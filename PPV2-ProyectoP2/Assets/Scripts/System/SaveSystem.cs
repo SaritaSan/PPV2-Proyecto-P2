@@ -30,15 +30,17 @@ public class SaveSystem : MonoBehaviour
         {
             Instance = this;
         }
+        subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SelectedLesson"));
     }
+
     void Start()
     {
-        SaveToJSON("LeccionDummy", data);
+        //SaveToJSON("LeccionDummy", data);
 
         //CreateFile("Luis", ".data");
-        Debug.Log(ReadFile("Luis", ".data"));
+        //Debug.Log(ReadFile("Luis", ".data"));
 
-        subject = LoadFromJSON<SubjectContainer>("SegundoCompendio");
+        //subject = LoadFromJSON<SubjectContainer>("SegundoCompendio");
     }
 
     public void CreateFile(string _name, string _extension)
