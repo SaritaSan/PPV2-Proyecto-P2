@@ -617,7 +617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &252300717
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1228,7 +1228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &525505686
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1763,7 +1763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &688319452
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1984,6 +1984,10 @@ PrefabInstance:
     - target: {fileID: 9211452074768972972, guid: 58d12d93389cc724ab3346ba4b5042d8, type: 3}
       propertyPath: m_Name
       value: SubjectBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 9211452074768972972, guid: 58d12d93389cc724ab3346ba4b5042d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2326,6 +2330,10 @@ PrefabInstance:
     - target: {fileID: 9211452074768972972, guid: 58d12d93389cc724ab3346ba4b5042d8, type: 3}
       propertyPath: m_Name
       value: SubjectBtn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9211452074768972972, guid: 58d12d93389cc724ab3346ba4b5042d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3413,6 +3421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SubjectBtn (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9211452074768972972, guid: 58d12d93389cc724ab3346ba4b5042d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3567,6 +3579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SubjectBtn
       objectReference: {fileID: 0}
+    - target: {fileID: 9211452074768972972, guid: 58d12d93389cc724ab3346ba4b5042d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3597,7 +3613,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1204926061
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3851,7 +3867,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Etapa 1: Primeros pasos'
+  m_text: Datos interesantes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6460c848a6bae3146937c4b6ef3fa61a, type: 2}
   m_sharedMaterial: {fileID: 9039547692324074958, guid: 6460c848a6bae3146937c4b6ef3fa61a, type: 2}
@@ -4562,7 +4578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.34509805, g: 0.8, b: 0.007843138, a: 1}
+  m_Color: {r: 0.34509805, g: 0.8, b: 0.007843138, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5196,7 +5212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1870864990
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5873,6 +5889,10 @@ PrefabInstance:
     - target: {fileID: 9211452074768972972, guid: 58d12d93389cc724ab3346ba4b5042d8, type: 3}
       propertyPath: m_Name
       value: SubjectBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 9211452074768972972, guid: 58d12d93389cc724ab3346ba4b5042d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

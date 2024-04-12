@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Sanhez
   productName: PPV2-ProyectoP2
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -624,7 +624,7 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: PPV2-ProyectoP2
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -632,7 +632,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: PPV2-ProyectoP2
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: PPV2-ProyectoP2
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

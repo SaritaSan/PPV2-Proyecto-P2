@@ -13,6 +13,7 @@ public class MainScript : MonoBehaviour
     [Header("External GameObject Configuration")]
     //esta es nuestra imagen principal que contiene la UI 
     public GameObject creditos;
+    public GameObject cofre;
 
 
     private void Awake()
@@ -38,6 +39,16 @@ public class MainScript : MonoBehaviour
         SceneManager.LoadScene("Lesson");
     }
 
+    public void DatesInteresting()
+    {
+        SceneManager.LoadScene("Novedades");
+    }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("Main");
+    }
+
 
 
     public void EnableWindow()
@@ -52,6 +63,21 @@ public class MainScript : MonoBehaviour
         {
             //activa el objeto si está desactivado
             creditos.SetActive(true);
+            //MainScript.instance.SetSelectedLesson(LessonName);
+        }
+    }
+    public void Cofre()
+    {
+        //activeSelf es si está activado
+        if (cofre.activeSelf)
+        {
+            //desactiva el objeto si está activo
+            cofre.SetActive(false);
+        }
+        else
+        {
+            //activa el objeto si está desactivado
+            cofre.SetActive(true);
             //MainScript.instance.SetSelectedLesson(LessonName);
         }
     }

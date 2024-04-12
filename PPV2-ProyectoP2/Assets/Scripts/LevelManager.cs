@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// En nuestra escena lesson, esta clase nos va a ayudar a cambiar las preguntas, las opciones de los botones
@@ -50,6 +51,12 @@ public class LevelManager : MonoBehaviour
             Instance = this;
         }
     }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("Main");
+    }
+
 
     /// <summary>
     ///  Esta cargará la primera pregunta de nuestra leccion y registra la respuesta,
