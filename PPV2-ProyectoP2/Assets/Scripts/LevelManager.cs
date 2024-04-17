@@ -52,6 +52,9 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Este metodo esta ligado a un boton con imagen de un tache, nos ayudará a regresar a la escena principal "Main"
+    /// </summary>
     public void GoToMenu()
     {
         SceneManager.LoadScene("Main");
